@@ -6,8 +6,8 @@ import { users, usersdb, projects, projectsdb, tasks, tasksdb } from "./types.ts
 const url = Deno.env.get("URL");
 if (!url){
   Deno.exit(1);
-}
-
+} 
+ 
 const client = new MongoClient(url);
 const dbName = 'P4BACKEND';
 
